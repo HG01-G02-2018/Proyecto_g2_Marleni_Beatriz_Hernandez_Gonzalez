@@ -85,6 +85,7 @@ sub {
 }
 img {
   border: 0;
+  display: inline-block;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -1085,7 +1086,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  color: rgb(10, 79, 136);
   background-color: #fff;
 }
 input,
@@ -1120,7 +1121,7 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
+  display:block;
   max-width: 100%;
   height: auto;
 }
@@ -1586,6 +1587,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #761c19;
 }
 @media (min-width: 768px) {
   .container {
@@ -4230,6 +4232,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
+  background-color: black;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4238,6 +4241,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
+    
   }
 }
 .navbar-static-top {
@@ -4311,6 +4315,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
