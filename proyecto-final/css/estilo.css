@@ -1,0 +1,264 @@
+*{
+	 box-sizing: border-box;
+}
+body{
+  background-color:#1a1a1b;
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-attachment: fixed;
+
+}
+h4 {
+	margin: 10px 0 30px 0;
+	letter-spacing: 8px;      
+	font-size: 22px;
+	color:slateblue;
+	font-family: serif;
+}
+h1{
+	margin: 12px 0 30px 0;
+	letter-spacing: 10px;
+	font-size: 30px;
+	color: #8A0808;
+	font-family: sans-serif;
+
+}
+h2{
+	font-family: cursive;
+	font-size: 20px;
+	color:rgb(76, 79, 230);
+	
+
+}
+.container {
+	padding: 80px 120px;
+
+}
+#blog p{
+  color: steelblue;
+} 
+#blog h2{
+  color: purple;
+}  
+#blog h3{
+  color: rgb(5, 60, 143);
+  font-family: cursive;
+  font-size: 2em;
+} 
+#contacto h3{
+  color: slateblue;
+  font-family: fantasy;
+  font-size: 2em;
+}  
+#contacto p{
+  color: rgb(12, 197, 221);
+  font-family: Times;
+  font-size: 15px;
+}                                                                                                                     
+
+/* -- POST -- */
+
+.main {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.post {
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #999;
+}
+
+.post .post-title a {
+	color: #3B0B0B;
+}
+
+.post .thumb {
+	margin-right:10px;
+	width:40%;
+}
+
+.post .thumb img {
+	width:100%;
+}
+
+.post .contenedor-botones {
+	width: 100%;
+}
+
+/* -- Media Querie -- */
+@media screen and (max-width: 768px) {
+	.post .thumb {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
+.font{
+	 font-family: sans-serif;
+    font-style: normal;
+    color: rgb(4, 105, 49);
+}
+.collapse{
+	font-family: sans-serif;
+    font-style: normal;
+    color: rgb(4, 105, 49);
+}
+.art{
+	background-color: #0B3861;
+}
+
+aside{
+	background-color: cyan;
+	font-family: serif;
+}
+.parrafo{
+   color: red;
+   font-family: Tahoma;
+   font-style: normal;
+}
+.carousel-inner img {
+	width: 100%; 
+	margin: auto;
+}
+.carousel-caption h3 {
+	color: #fff !important;
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+	display: none; /* ocultar el texto del carrusel cuando la pantalla tiene menos de 600 pixeles de ancho*/
+  }
+}
+.nav-tabs li a {
+	color: #777;
+}
+#googleMap {
+	width: 100%;
+	height: 400px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}  
+.navbar {
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 0;
+	background-color: #2d2d30;
+	border: 0;
+	font-size: 11px !important;
+	letter-spacing: 4px;
+	opacity: 0.9;
+}
+.navbar li a, .navbar .navbar-brand { 
+	color: #a18888 !important;
+}
+.navbar-nav li a:hover {
+	color: #fff !important;
+}
+.navbar-nav li.active a {
+	color: #fff !important;
+	background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+.open .dropdown-toggle {
+	color: #fff;
+	background-color: #555 !important;
+}
+.dropdown-menu li a {
+	color: #E6E6E6 !important;
+}
+.dropdown-menu li a:hover {
+	background-color: #3B0B17 !important;
+
+}
+
+
+          /*Galeria*/
+
+.galeria {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style:none;
+}
+.galeria img {
+	 display: block;
+  max-width: 100%;
+}
+
+.galeria__item {
+  width: 80%;
+  cursor: pointer;
+}
+@media (min-width:480px) {
+  .galeria__item {
+    width: 48%;
+    margin: 5px;
+  }
+}
+@media (min-width:768px) {
+  .galeria__item {
+    width: 30%;
+  }
+}
+@media (min-width:1024px) {
+  .galeria__item {
+    width: 20%;
+    margin: 15px;
+  }
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__img {
+  width: 70%;
+  max-width: 700px;
+}
+
+.modal__boton {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: monospace;
+  line-height: 50px;
+  text-align: center;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+  
+  
+}
+
+/*Pie de pagina contacto*/
+  footer {
+      background-color: #1e1e1f;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }

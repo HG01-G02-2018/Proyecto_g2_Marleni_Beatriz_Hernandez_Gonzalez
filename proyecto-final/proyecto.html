@@ -1,67 +1,402 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyecto Final</title>
-    <link rel="stylesheet" href="css/boostrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>
-    <br>
-    <div class="container">
-            <header>
-                <br>
-                    <img src="img/logo1.png" width="300" height="100" alt="" class="img-responsive img-rounded  img-float-xs-left">
-            </header>
-            <br>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
-                            <span class="sr-only">Menu</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse id" id="navbar-1">
-                        <ul class="nav navbar-nav">
-                                <li class="active">
-                                    <a href="#">Novedades</a>
-                                    </li>
-                                <li class="dropdown">
-                                        <a href="#" >Categorias</a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Acerca de</a>
-                                    </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <section class="main">
-                    <h1>Novedades</h1>
-                    <hr>
-                        <img src="img/aves-extincion-2.jpg" alt="">
-                        <h2>El fascinante vuelo de las aves</h2>
-                        <p>Hacer avistamiento de aves en Colombia es una tarea que demanda paciencia, cautela y constancia,
-                         pero cuando se logra ver su vuelo alegre y maravilloso, o escuchar sus trinos y sus cantos, 
-                         resulta una de las experiencias más gratificantes. Y qué mejor que vivirlo en el Eje Cafetero, 
-                         otra de las zonas pródigas en población de estos seres alados, donde la actividad de observación  
-                         resulta un plan suplementario ideal en medio de todas las posibilidades turísticas.</p>
-              </section>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"> 
+    <nav class="navbar navbar-nav navbar-default navbar-fixed-top">
+        <div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">Logo</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#myPage">INICIO</a></li>
+              <li><a href="#aves">AVES</a></li>
+              <li><a href="#Top">TOP</a></li>
+              <li><a href="ejercicio.html">ARTICULOS</a></li>
+              <li><a href="#contacto">CONTACTO</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGORIA
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="#mapa"">Mapa</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+        <li data-target="#myCarousel" data-slide-to="10"></li>
+      </ol>
+         <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+         <img src="img/guacamayo-azul-amarillo-dorado.jpg" alt="New York" width="1200" height="700">
+           <div class="carousel-caption">
+              <h3>Guacamayo Azul Amarillo Dorado</h3>
+               <p>Como otros guacamayos en el Amazonas, se congregan en las orillas del río, en las colpas, para consumir arcilla..</p>
+           </div>      
+        </div>
+        <div class="item">
+          <img src="img/tucan.jpg" alt="Chicago" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>Túcan</h3>
+            <p>Ave de diversos colores con un pico tan largo</p>
+          </div>      
+        </div>
+        <div class="item">
+          <img src="img/Perico_Dorado.jpeg" alt="Chicago" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>Perico Dorado</h3>
+            <p>Aratinga es un género de aves americanas de la familia de los loros</p>
+          </div>      
+        </div>
+        <div class="item">
+          <img src="img/tortola-europea.jpg" alt="Chicago" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>Totrtola Europea</h3>
+            <p>La tórtola europea es un colúmbido esbelto y de pequeño tamaño, que mide entre 24 y 29 cm de largo</p>
+          </div>      
+        </div>
+        <div class="item">
+          <img src="img/quetzal.jpg" alt="Chicago" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>El Quetzal</h3>
+            <p>El Quetzal fue declarado Ave Nacional de Guatemala</p>
+          </div>      
+        </div>
+        <div class="item">
+          <img src="img/Colibri-colombia.jpg" alt="Chicago" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>Colibri Colombia</h3>
+            <p>Los colibríes y vencejos son aves adaptadas para el vuelo ágil y rápido. </p>
+          </div>      
+        </div>
+        <div class="item">
+          <img src="img/Alcion1.jpg" alt="Chicago" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>Alcion</h3>
+            <p>Éste es un martín-pescador de talla media, 20-23 cm de largo.</p>
+          </div>      
+        </div>
+            <div class="item">
+              <img src="img/cacatuaAlba.jpg" alt="Chicago" width="1200" height="700">
+              <div class="carousel-caption">
+                <h3>Cacatua Alba</h3>
+                <p>es una especie de ave psitaciforme de la familia Cacatuidae.</p>
+              </div>      
             </div>
-            
+            <div class="item">
+              <img src="img/Guacamayo_Azul.jpeg" alt="Chicago" width="1200" height="700">
+              <div class="carousel-caption">
+                <h3>Guacamayo Azul</h3>
+                <p> Habita en las selvas de buena parte de Brasil, Bolivia y el norte de Paraguay</p>
+              </div>      
+            </div>
+            <div class="item">
+              <img src="img/Guacamayo_Militar_Venezolana.jpeg" alt="Chicago" width="1200" height="700">
+              <div class="carousel-caption">
+                <h3>Guacamayo Militar Venezolana</h3>
+                <p>También conocido como Guacamayo verde o Papagayo verde, es una especie de ave del género Ara de la familia de los loros.</p>
+              </div>      
+            </div>
+             <div class="item">
+              <img src="img/header.jpg" alt="Chicago" width="1200" height="700">
+              <div class="carousel-caption">
+                <h3>Guacamayos Rojos</h3>
+                <p>También conocido como Guacamayo verde o Papagayo verde, es una especie de ave del género Ara de la familia de los loros.</p>
+              </div>      
+            </div>
+             <!-- Controls-->
+       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+      </div>
+  </div>
+      
+ <!-- Contenedor (las aves Section) -->
+  <div id="aves" class="container-fluid"> 
+  <section class="main container">
+     <div class="row">
+      <section class="posts col-md-9">
+          <h1 class="text-center">Aves en peligro de extincion </h1>
+          <p class="text-center parrafo"><em>¡En todo el planeta!</em></p>
+          <article class="post clearfix">
+          	<a href="#" class="thumb pull-left"><img src="img/guacamayo-rojo.jpg" alt=""></a>
+          	<h2 class="post-title">Guacamaya o Papagayo Rojo</h2>
+          	<p class="post-contenido text-justify font">Este primo del loro es una de las subespecies con el plumaje más bellos que puede ofrecer 
+              la familia de Psittacidae. Habita principalmente las regiones amazónicas y se encuentra actualmente amenazada por la caza furtiva 
+              en su hábitat natural.
+               <p class="collapse" id="sec1">
+                  es un ave que se caracteriza por tener una gran variedad en su dieta, ya que podemos considerarlos por
+                  un lado insectívoros, por otro herbívoros, además de carnívoros y omnívoros. Básicamente, se alimentan de insectos,
+                  frutas, vegetales, nueces, algún que otro animalito chico de pequeño tamaño como anfibios o pequeñas lagartijas.
+              </p>
+            </p>
+               <a href="#sec1" class="btn btn-primary" data-toggle="collapse">Leer Mas</a>
+				   </article>
+            <article class="post clearfix">
+            	<a href="#" class="thumb pull-left"><img src="img/colibri-indigo.jpg"></a>
+            	<h2 class="post-title">Colibrí índigo</h2>
+            	<p class="post-contenido text-justify font">Esta especie es  una de las más conocidas y observadas, pues habita gran parte de
+                 la zona andina y puede encontrarse incluso en las ciudades, el colibrí índigo nos muestra que el brillo y el color son algo 
+                 endémico de Colombia.
+                 <p class="collapse" id="sec2">
+                    es un género de aves apodiformes pertenecientes a la subfamilia de los troquilinos (Trochilinae) y llamadas comúnmente 
+                    colibrí, picaflor o "pájaro-mosca". Por su aspecto pequeño y gran velocidad de vuelo son las únicas aves que pueden planear 
+                    su vuelo.
+                    </p>
+               </p>
+            	<a href="#sec2" class="btn btn-primary" data-toggle="collapse">Leer Mas</a>  
+            </article>
+              <article class="post clearfix">
+              	<a href="#" class="thumb pull-left"><img src="img/tucan1.jpg"></a>
+              	<h2 class="post-title">Tucán</h2>
+              	<p class="post-contenido text-justify font">Ave de diversos colores con un pico tan largo que puede llegar a medir tres cuartas
+                   partes de su altura total, normalmente esta ave se alimenta de frutas, insectos e incluso huevos de otras aves.
+                 <p class="collapse" id="sec3">
+                    El color del cuerpo de los tucanes normalmente el color predominante de todo su plumaje es el color negro y en la zona delantera,
+                     la de su pecho tiene una especie de mancha color amarillo, azul o blanco recubierto de una franja anaranjada, esto varia 
+                     dependiendo de la raza.
+                  </p>
+                </p>
+              	<a href="#sec3" class="btn btn-primary" data-toggle="collapse">Leer Mas</a>
+              </article>
+              <article class="post clearfix">
+                <a href="#" class="thumb pull-left"><img src="img/Lori_Arcoiris.jpeg"> </a>
+                <h2 class="post-title">Loro Arcoiris</h2>
+                <p class="post-contenido text-justify font">El loro arcoíris se caracteriza a nivel físico por el bonito abanico de colores de sus plumas: 
+                  azul, rojo, verde y amarillo se combinan armónicamente, haciendo honor a su nombre.
+                   <p class="collapse" id="sec4">
+                   Su tamaño no es el de un ave demasiado grande, entre 20 y 30 centímetros, y no suele pesar más allá de 200 gramos. Sin embargo, 
+                   necesitará un espacio amplio y bien acondicionado para vivir. No se encuentran variaciones en la fisonomía externa a nivel sexual,
+                    por lo que es complicado saber el sexo de este animal a no ser que lo haga un experto a través de una endoscopia o de una prueba de ADN.
+                  </p>
+                   </p>
+                <a href="#sec4" class="btn btn-primary" data-toggle="collapse">Leer Mas</a>
+              </article>
+</section>
+<aside id="articulo" class=" col-md-3  hidden-xs hidden-sm">
+	 <h3 class="text-center">Articulos</h3>
+    <div class="panel-group" id="accordion" role="tablist">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="heading1">
+				<h3 class="panel-title">
+					<a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><h3>El dodo</h3></a>
+				</h3>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<img src="img/dodo.jpg" class="img-responsive">
+          Célebre ave no voladora, utilizada usualmente como símbolo de la conservación de las especies para evitar su extinción, 
+          habitó la isla de Mauricio hasta 1681, cuando fue abatido el último especimen conocido.
+				</div>
+			</div>
+		</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="heading2">
+			<h3 class="panel-title">
+				<a href="#collapse2" data-toggle="collapse" data-parent="#accordion"><h3>Pajaro Elefante</h3></a>
+			</h3>
+		</div>
+		<div id="collapse2" class="panel-collapse collapse">
+			<div class="panel-body">
+				<img src="img/pajaroElefante.jpg" class="img-responsive">
+         Era la mayor que ha coexistido con el hombre moderno, llegando a medir hasta tres metros. Habitó Madagascar hasta,
+          por lo menos, el siglo XI; poco se conoce acerca de las causas de su extinción y tampoco está claro en qué momento se produjo.
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="heading3">
+			<h3 class="panel-title">
+				<a href="#collapse3" data-toggle="collapse" data-parent="#accordion"><h3>El carpintero imperial</h3></a>
+			</h3>
+		</div>
+		<div id="collapse3" class="panel-collapse collapse">
+			<div class="panel-body">
+				<img src="img/imperial.jpg" class="img-responsive">
+        Célebre ave no voladora, utilizada usualmente como símbolo de la conservación de las especies para evitar su extinción, 
+        habitó la isla de Mauricio hasta 1681, cuando fue abatido el último especimen conocido.
+			</div>
+		</div>
+	</div>
+  <div class="panel panel-default">
+  	<div class="panel-heading" role="tab" id="heading4">
+  		<h3 class="panel-title">
+  			<a href="#collapse4" data-toggle="collapse" data-parent="#accordion"><h3>El águila de Haast</h3></a>
+  		</h3>
+  	</div>
+  	<div id="collapse4" class="panel-collapse collapse">
+  		<div class="panel-body">
+  			<img src="img/aguilaHaast.jpg" class="img-responsive">
+        Propio de Norteamérica, el último registro fiable de un ejemplar vivo data de 1956. La pérdida de bosques propios para su supervivencia
+         fue la causa de su declive, aunque numerosas observaciones no confirmadas y el presunto redescubrimiento de su cercano pariente, el pico 
+         de marfil,en 2005, podrían indicar una posible supervivencia, por lo que la UICN lo cataloga como "posiblemente extinto".
+      </div>
+  	</div>
+  </div>
+<div class="panel panel-default">
+	<div class="panel-heading" role="tab" id="heading5">
+		<h3 class="panel-title">
+			<a href="#collapse5" data-toggle="collapse" data-parent="#accordion"><h3>La paloma migradora</h3></a>
+		</h3>
+	</div>
+	<div id="collapse5" class="panel-collapse collapse">
+		<div class="panel-body">
+			<img src="img/palomaMigratoria.jpg" class="img-responsive">
+      Antaño era muy común en Norteamérica. En la época de la migración formaba bandadas de millones de individuos. Tras la colonización
+       por los europeos, grandes cacerías organizadas aniquilaron todas las bandadas existentes para obtener su carne.
+		</div>
+	</div>
+</div>
+</div>
+</aside>
+</section>
+</div>
+<div id="Top" class="container-fluid">
+   <div  class="container">
+     <h4 class="text-center">El TOP de las aves mas bellas</h4>
+       <ul class="galeria">
+        <li class="galeria__item"><img src="img/pato-mandarin.jpg" class="galeria__img img-responsive"><p class="text-center">Pato Mandarin</p></li>
+        <li class="galeria__item"><img src="img/urraca-azul.jpg" class="galeria__img img-responsive"><p class="text-center">Urraca Azul de Taiwan</p></li>
+        <li class="galeria__item"><img src="img/pavoReal.jpg" class="galeria__img img-responsive"><p class="text-center">Pavo Real</p></li>
+        <li class="galeria__item"><img src="img/cardinal.jpg" class="galeria__img img-responsive"><p class="text-center">Cardenal o Cardinal</p></li>
+        <li class="galeria__item"><img src="img/canario.jpg" class="galeria__img img-responsive"><p class="text-center">Canario</p></li>
+        <li class="galeria__item"><img src="img/colibri1.jpg" class="galeria__img img-responsive"><p class="text-center">Colibrí</p></li>
+        <li class="galeria__item"><img src="img/alcion.jpg" class="galeria__img img-responsive"><p class="text-center">Alcion</p></li>
+        <li class="galeria__item"><img src="img/tangara.jpg" class="galeria__img img-responsive"><p class="text-center">Tangara</p></li>
+        <li class="galeria__item"><img src="img/marinPescador.jpg" class="galeria__img img-responsive"><p class="text-center">Marín Pescador</p></li>
+        <li class="galeria__item"><img src="img/sieteColas.jpg" class="galeria__img img-responsive"><p class="text-center">El siete colores</p></li>
+        <li class="galeria__item"><img src="img/cotorra.jpg" class="galeria__img img-responsive"><p class="text-center">Cotorra</p></li>
+        <li class="galeria__item"><img src="img/flamenco.jpg" class="galeria__img img-responsive"><p class="text-center">Flamenco</p></li>
+        <li class="galeria__item"><img src="img/cisne.jpg" class="galeria__img img-responsive"><p class="text-center">Cisne</p></li>
+    </ul>
+   </div>
+</div>
+<!-- Contenedor (Contacto Section) -->
+<div id="contacto" class="container-fluid">
+  <div class="container">
+  <h3 class="text-center">Contacto</h3>
+  <p class="text-center"><em>Amantes de las aves!</em></p>
+  <div class="row">
+    <div class="col-md-4">
+      <p>notas</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Ahuachapán, El Salvador</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Telefono: +503 7226-2384</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: herbeatriz2296@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+          <div id="msg1"></div>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <div id="msg2"></div>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea>
+      <div id="msg3"></div>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right btn-primary" type="submit" id="enviar">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</div>
+<div id="blog" class="container-fluid">
+  <div class="container">
+     <h3 class="text-center">Desde el Blog</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Naturaleza</a></li>
+    <li><a data-toggle="tab" href="#menu1">Ambiente</a></li>
+    <li><a data-toggle="tab" href="#menu2">Mundo Aves</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Naturaleza</h2>
+      <p>El vocablo naturaleza proviene del latín “natura” que significa natural. La naturaleza es todo lo que está creado de manera natural en el planeta, está relacionada con las diferentes clases de seres vivos, como los animales, las plantas, las personas. También forma parte de la naturaleza el clima, y la geología de la tierra..</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Ambiente</h2>
+      <p>El medio ambiente es el entorno formado por elementos naturales y artificiales, el medio ambiente no es lo que está alrededor del ser humano, ese concepto es erróneo, y se ha modificado a tal punto que colocan al hombre como el centro del medio ambiente cuando no es así. El medio ambiente es la combinación de todos los presentes en el planeta, el medio ambiente es un espacio de interacción, de relación y comunicación de entre los organismos con o sin vida entre los que se desarrollan constantes cambios producidos por agentes externos que perturban y modifican al medio y agentes internos que reaccionan ante los cambios ejercidos en el.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Mundo de Aves</h2>
+      <p> Otras especies sólo son transitorias, que migran a nuestros países para protegerse del frío... De cualquier forma, aunque las fotos no serán también exclusivas de El Salvador, nos servirán para identificar, conocer y ubicarlas en nuestro entorno natural; especies que viven con nosotros, que las disfrutamos, que las sentimos muy nuestras por su estadía y belleza, por su función, por sus cantos, adornando nuestras tierras..</p>
+    </div>
+  </div>
+  </div>
+  
+</div>
+
+<!-- Añadir Google Maps -->
+<div class="container-fluid">
+  <div id="mapa" class="container">
+  <div  id="googleMap">
     
-        
+  </div>
+</div>
+
+</div>
+
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+   <p>Beatriz Hernandez - My page</p>
+  <p><a href="#" data-toggle="tooltip" title="Visit myBlog">www.myBlog.com</a></p>
+  <div class="col-xs-9">
+        <ul class="list-inline text-right">
+         <li><a href="#">Contactos</a></li>
+        <li><a href="#">Referencias</a></li>
+      </ul>
+      </div> 
+</footer>   
 
 
         <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script1.js"></script>
+        <script src="js/bootstrap.js"></script>
 </body>
 </html>
